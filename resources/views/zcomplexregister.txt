@@ -1,0 +1,141 @@
+<x-layout>
+    <div class="container mt-5">
+        <form>
+            <div class="mb-4">
+                <h2 class="h4">Profile</h2>
+                <p class="text-muted">This information will be displayed publicly so be careful what you share.</p>
+            </div>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">workcation.com/</span>
+                    </div>
+                    <input type="text" class="form-control" id="username" placeholder="janesmith">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="about">About</label>
+                <textarea class="form-control" id="about" rows="3"></textarea>
+                <small class="form-text text-muted">Write a few sentences about yourself.</small>
+            </div>
+            <div class="form-group">
+                <label for="photo">Photo</label>
+                <div class="d-flex align-items-center">
+                    <svg class="bi bi-person-circle" width="32" height="32" fill="currentColor">
+                        <path d="M13 14s-1 0-1-1 1-4 4-4 4 4 4 4-1 1-1 1H13zm-2 0a5 5 0 1 1 10 0H11z"/>
+                        <path fill-rule="evenodd" d="M8 8a4 4 0 1 1 8 0 4 4 0 0 1-8 0zM4 8a8 8 0 1 1 16 0 8 8 0 0 1-16 0z"/>
+                    </svg>
+                    <button type="button" class="btn btn-outline-secondary ml-3">Change</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="cover-photo">Cover photo</label>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="cover-photo">
+                    <label class="custom-file-label" for="cover-photo">Choose file</label>
+                </div>
+                <small class="form-text text-muted">PNG, JPG, GIF up to 10MB</small>
+            </div>
+            <div class="mb-4">
+                <h2 class="h4">Personal Information</h2>
+                <p class="text-muted">Use a permanent address where you can receive mail.</p>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="first-name">First name</label>
+                    <input type="text" class="form-control" id="first-name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="last-name">Last name</label>
+                    <input type="text" class="form-control" id="last-name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <select id="country" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>United States</option>
+                    <option>Canada</option>
+                    <option>Mexico</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="street-address">Street address</label>
+                <input type="text" class="form-control" id="street-address">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="city">City</label>
+                    <input type="text" class="form-control" id="city">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="region">State / Province</label>
+                    <input type="text" class="form-control" id="region">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="postal-code">ZIP / Postal code</label>
+                    <input type="text" class="form-control" id="postal-code">
+                </div>
+            </div>
+            <div class="mb-4">
+                <h2 class="h4">Notifications</h2>
+                <p class="text-muted">We'll always let you know about important changes, but you pick what else you want to hear about.</p>
+            </div>
+            <fieldset class="form-group">
+                <legend>By email</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="comments" checked>
+                    <label class="form-check-label" for="comments">
+                        Comments
+                    </label>
+                    <small class="form-text text-muted">Get notified when someone posts a comment on a posting.</small>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="candidates">
+                    <label class="form-check-label" for="candidates">
+                        Candidates
+                    </label>
+                    <small class="form-text text-muted">Get notified when a candidate applies for a job.</small>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="offers">
+                    <label class="form-check-label" for="offers">
+                        Offers
+                    </label>
+                    <small class="form-text text-muted">Get notified when a candidate accepts or rejects an offer.</small>
+                </div>
+            </fieldset>
+            <fieldset class="form-group">
+                <legend>Push notifications</legend>
+                <p class="text-muted">These are delivered via SMS to your mobile phone.</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="push-notifications" id="push-everything" checked>
+                    <label class="form-check-label" for="push-everything">
+                        Everything
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="push-notifications" id="push-email">
+                    <label class="form-check-label" for="push-email">
+                        Same as email
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="push-notifications" id="push-nothing">
+                    <label class="form-check-label" for="push-nothing">
+                        No push notifications
+                    </label>
+                </div>
+            </fieldset>
+            <div class="form-group text-right">
+                <button type="button" class="btn btn-secondary">Cancel</button>
+                <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+        </form>
+    </div>
+</x-layout>
