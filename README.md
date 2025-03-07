@@ -2,8 +2,6 @@
 My trial To-Do list web app
 =======
 
-# ScheDo-Web
-
 ScheDo-Web is a web application designed to help users manage their tasks efficiently in the form of a to-do list. Built with modern web development tools, it provides a clean and intuitive interface for organizing tasks, setting priorities, and tracking progress.
 
 This project is ideal for programmers looking to explore a functional task management system or contribute to an open-source web application.
