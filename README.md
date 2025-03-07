@@ -6,7 +6,6 @@ ScheDo-Web is a web application designed to help users manage their tasks effici
 
 This project is ideal for programmers looking to explore a functional task management system or contribute to an open-source web application.
 
----
 
 ## Setup Instructions for Windows
 
@@ -17,7 +16,6 @@ To set up ScheDo-Web on your local machine, follow these steps. This guide assum
 2. **Composer** installed (for dependency management).
 3. **Git** installed (for cloning the repository).
 
----
 
 ### Step 1: Clone or Download the Repository
 Clone the repository to your local machine using Git:
@@ -26,7 +24,6 @@ git clone https://github.com/your-username/ScheDo-Web.git
 ```
 Alternatively, download the repository as a ZIP file and extract it to your desired location.
 
----
 
 ### Step 2: Navigate to the Project Folder
 Open Command Prompt and navigate to the project folder:
@@ -34,7 +31,6 @@ Open Command Prompt and navigate to the project folder:
 cd path\to\ScheDo-Web
 ```
 
----
 
 ### Step 3: Install Dependencies
 Run the following command to install the required vendor components:
@@ -42,7 +38,6 @@ Run the following command to install the required vendor components:
 composer install
 ```
 
----
 
 ### Step 4: Set Up Environment Configuration
 1. Create a `.env` file by copying the `.env.example` file:
@@ -54,13 +49,12 @@ composer install
    php artisan key:generate
    ```
 
----
 
 ### Step 5: Create a Database
 1. Open **phpMyAdmin** (or your preferred MySQL client).
 2. Create a new database for the project (e.g., `schedo_web`).
 
----
+ 
 
 ### Step 6: Configure the `.env` File
 1. Open the `.env` file in a text editor.
@@ -73,7 +67,7 @@ composer install
    - Replace `schedo_web` with the name of the database you created.
    - If your database has a username and password, update `DB_USERNAME` and `DB_PASSWORD` accordingly.
 
----
+ 
 
 ### Step 7: Run the Application
 1. Start the development server:
@@ -87,12 +81,11 @@ composer install
    php artisan migrate
    ```
 
----
+ 
 
 ### Step 8: Access the Application
 Open your browser and navigate to `http://localhost:8000`. You should now see the ScheDo-Web application running locally.
 
----
 
 ## Contributing
 Contributions are welcome! If you'd like to contribute to ScheDo-Web, please follow these steps:
@@ -101,19 +94,18 @@ Contributions are welcome! If you'd like to contribute to ScheDo-Web, please fol
 3. Commit your changes and push to your branch.
 4. Submit a pull request with a detailed description of your changes.
 
----
 
 ## License
 This project is open-source and available under the [MIT License](LICENSE).
 
----
 
 ## Support
 If you encounter any issues or have questions, feel free to open an issue on the GitHub repository.
 
----
 
 Thank you for using ScheDo-Web! Happy task management! 🚀
+
+---
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
