@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ScheDo-Web
 My trial To-Do list web app
 =======
